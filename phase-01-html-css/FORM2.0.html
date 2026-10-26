@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form Example 2.0</h2>
+
+    <form action="/submit" method="post">  
+
+        <!-- Text Input Type -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+        </div>
+
+        <div>
+            <label for ="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required><br><br>
+        </div>
+
+
+        <!--datalist-->
+        <div>
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" id="browser" name="browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+            <br><br>
+        </div>
+
+        <!--datalist for time-->
+        <div>
+            <label for="time">Select a time:</label>
+            <input type="time" list="populartime" >
+            <datalist id="populartime">
+                <option value="08:00">
+                <option value="12:00">
+                <option value="16:00">
+                <option value="20:00">
+            </datalist>
+            <br><br>
+        </div>
+        <!--datalist for colour-->
+        <div>
+            <label for="color">Choose a color:</label>
+            <input type="color" id="color" name="color" list="redcolor">
+            <datalist id="redcolor">
+                <option value="#880000"></option>
+                <option value="#80000"></option>
+                <option value="#0000ff"></option>
+                <option value="#ffff00"></option>
+                <option value="#ff00ff"></option>
+
+            </datalist>
+
+        <!--datalist for range-->
+        <div>
+            <label for="range">Select a range:</label>
+            <input type="range" id="tick" name="tick" list="tickmarks" min="0" max="100" step="25">
+            <datalist id="tickmarks">
+                <option value="0">0</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+            </datalist>
+            <br><br>
+        
+        </div>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
