@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Document</title>
+</head>
+<body>
+    <h1>popover,details,progress & meter element</h1>
+  
+    <!-- popover element -->
+    <button popovertarget="myPopover">Open Popover</button>
+    <div id="myPopover" popover>
+        <p>This is a simple popover.</p>
+    </div>
+
+    <!-- details element -->
+    <details>
+        <summary>Click to see more details</summary>
+        <p>This is the content inside the details element.</p>
+    </details>
+
+    <!-- progress element -->
+    <label for="file">File upload progress:</label> 
+    <progress id="file" value="32" max="100"> 32% </progress>
+
+    <!-- meter element -->
+    <label for="disk-usage">Disk usage:</label>
+    <meter id="disk-usage" value="50" min="0" max="100" low="30" high="90" optimal="80"> 60% </meter>
+
+</body>
+</html>
