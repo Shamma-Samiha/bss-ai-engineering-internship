@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping</title>
+</head>
+<body>
+    <h2>Image Mapping Example</h2>
+
+      <img
+        src="images/Computer image.png"
+        alt="Workspace with laptop, phone, coffee and notebook"
+        usemap="#computermap"
+    >
+
+    <map name="computermap">
+
+        <!-- Laptop er space ta -->
+        <area
+            shape="rect"
+            coords="250,145,950,965"
+            href="https://github.com"
+            alt="Laptop"
+            title="Laptop"
+            target="_blank"
+        >
+
+        <!-- Smartphone er ta -->
+        <area
+            shape="rect"
+            coords="1010,420,1175,740"
+            href="https://www.google.com"
+            alt="Smartphone"
+            title="Smartphone"
+            target="_blank"
+        >
+
+        <!-- Coffee Cup -->
+        <area
+            shape="circle"
+            coords="1120,930,125"
+            href="https://en.wikipedia.org/wiki/Coffee"
+            alt="Coffee"
+            title="Coffee Cup"
+            target="_blank"
+        >
+
+
+    </map>
+
+</body>
+</html>
