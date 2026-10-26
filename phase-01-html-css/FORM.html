@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form Example</h2>
+
+    <form action="/submit" method="post">  
+
+        <!-- Text Input Type -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+        </div>
+
+        <div>
+            <label for ="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required><br><br>
+        </div>
+
+        <!-- Radio Input Type -->
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label  >
+            <br><br>
+        </div>
+
+        <!-- Select Input Type -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+            <br><br>
+        </div>
+
+        <!--Checkbox Input Type-->
+        <div>
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe"> 
+            <br><br>
+        </div>
+
+        <!--Multiple Checkbox-->
+        <div>
+            <label for="hobbies">Hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+            <label for="hobby1">Reading</label><br>
+            <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+            <label for="hobby2">Traveling</label><br>
+            <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+            <label for="hobby3">Sports</label><br><br>
+        </div>
+
+        <!--Color Input Type-->
+        <div>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+        </div>
+
+        <!--Date Input Type-->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+        </div>
+
+        <!--Month Input-->
+        <div>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month">
+            <br><br>
+        </div>
+
+        <!--Week Input-->
+        <div>
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week">
+            <br><br>
+        </div>
+
+        <!--Time Input-->
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+        </div>
+
+        <!--Range Input-->
+        <div>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100">
+            <br><br>
+        </div>
+
+        <!--Number Input-->
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100">
+            <br><br><br>
+        </div>
+
+
+        <!--Textarea Input Type-->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
