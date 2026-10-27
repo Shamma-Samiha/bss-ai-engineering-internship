@@ -1,0 +1,39 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+a{
+    text-decoration: none; /*jaate underlined by default na hoy*/
+}
+
+.colors {
+   /* background-image: url(./dark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 10px;*/
+
+    /*Linear Gradient*/
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+}
+
+.color h2{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-indent: 0px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 2px #ccc;
+
+    
+}
