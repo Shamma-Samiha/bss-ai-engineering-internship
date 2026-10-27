@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+a{
+    text-decoration: none; /*jaate underlined by default na hoy*/
+}
+
+.colors {
+   /* background-image: url(./dark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 10px;*/
+
+    /*Linear Gradient*/
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+}
+
+.color h2{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-indent: 0px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 2px #ccc;
+
+    
+}
+
+/*Regular Link*/
+a{
+    text-decoration: none; /*jaate underlined by default na hoy*/
+    color: #0cb484; 
+}
+
+/*Hover Link*/
+a:hover{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/*Active Link*/
+a:active{
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/*Visited Link*/
+a:visited{
+    color: #942484;
+    text-decoration: none;
+}
+
+/*Focus Link*/
+a:focus{
+    background-color: #b4b1a2;
+    color: #0cb484;
+    text-decoration: underline;
+}
+
+.fa-truck{
+    color: #ff6600;
+    font-size: 50px;
+}
+.fa-trophy{
+    color: #ffcc00; 
+    font-size: 50px;
+}
+.fa-circle-user{
+    color: #0cb484;
+    font-size: 50px;
+}
