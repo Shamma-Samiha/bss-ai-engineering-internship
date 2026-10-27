@@ -1,0 +1,63 @@
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+/*Type Selector*/
+h2 {
+    color: red;
+    font-size: 50px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*Class Selector*/
+.sporty {
+    color: green;
+    font-size: 20px;
+}
+
+.casual {
+    color: orange;
+    font-size: 20px;
+}
+
+.formal {
+    color: purple;
+    font-size: 20px;
+}
+
+/*ID Selector*/
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    color:cadetblue;
+}
+
+/*Multiple Selector*/
+.sporty, .casual, .formal {
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+}
+
+/*Descendant Selector*/
+#container h2 {
+background-color: lightgray;
+    padding: 10px;
+}
+
+/*Universal Selector*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
