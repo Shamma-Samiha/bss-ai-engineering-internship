@@ -3,6 +3,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+/*display:none;*/ /*display property*/
 
 }
 
@@ -25,8 +26,9 @@ box-sizing: border-box;
     border-style: dotted;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 30px;
+    /*visibility: hidden;*/ /*display property er part*/
 }
-
+a{color:blueviolet}
 .box-2{
     width :80%;
     height:100px;
