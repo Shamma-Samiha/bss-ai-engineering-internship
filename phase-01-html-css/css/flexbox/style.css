@@ -1,0 +1,26 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-style: 'Poppins' sans-serif;
+}
+
+.flex-item{
+    height: 200px;
+    width: 200px;
+    background: coral;
+    border: 1px solid black;
+}
+
+/* To bring all items in a row*/
+
+.flex-container{
+    background: #ccc;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
