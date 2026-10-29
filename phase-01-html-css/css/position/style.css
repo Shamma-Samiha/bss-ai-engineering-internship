@@ -2,49 +2,31 @@ body{
     font-family: Arial, sans-serif;
 }
 
-.box{
-    width: 200px;
-    height:200px;
-    background: lightblue;
-    border: 1px solid black;
-    margin: 10px;
+.container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 50px;
 }
 
+.box{
+    width:200px;
+    height:200px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border:1px solid #ccc;
+    border-radius: 10px;
+
+}
 .box-1{
-    position: static; /*eta kichui korbena, eta mane natural position, erpor left 30px dileo no change*/
+    box-shadow: 30px 20px 30px 5px #000;
 }
 
 .box-2{
-    position:relative; /*er mane eitar por left right e shorano jbe*/
-    left: 30px;
-    top: 20px;
+    box-shadow: 30px 20px 30px 5px rgba(0, 0, 0, 0.5)
 }
 
 .box-3{
-    position:fixed; /*etake ekhon norachora ba scroll korleo same jaegae thakbe*/
-    top:0;
-    Right:0;
-    z-index:2;
-}
-
-
-.box-4{
-    position: sticky; /*it's a combination of relative and fixed*/
-    top:200px; /*relativee er moto move kore but top e 200px e jeye stick hobe, navbar e*/
-}
-
-.box-5{
-    position:relative;
-    width: 600px;
-    height: 600px;
-    background: coral;
-}
-
-.box-6{
-    position: absolute;
-    top:0;
-    right:0;
+    box-shadow: 30px 20px 30px 5px rgba(0, 0, 0, 0.5),-5px 10px 5px red;
 }
