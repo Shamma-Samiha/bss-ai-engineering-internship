@@ -12,11 +12,9 @@ body{
 }
 
 .container{
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid black;
-    /*font-size: 10px;*/
+    background: purple;
+    color:whitesmoke;
+    width: 70vh;
 }
 
 img{
