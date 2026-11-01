@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Reader Accessibility</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header" role="banner">
+
+        <a href="/" class="logo"
+           aria-label="Logo and link to homepage">
+            My Website
+        </a>
+
+    
+        <nav role="navbar" class="nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+
+            
+                <li>
+                    <a href="https://www.facebook.com/" aria-label="Follow Us On Facebook">
+                        <i class="fa-brands fa-facebook"
+                           aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+      
+            <form class="search" role="search">
+
+                <label for="search" class="visually-hidden">
+                    Search
+                </label>
+
+                <input type="search"
+                       id="search"
+                       name="search">
+
+                <button type="submit">Search</button>
+
+            </form>
+        </nav>
+
+    </header>
+<img
+    src="https://picsum.photos/200/300"
+    alt=""
+    role="button"
+    aria-label="Button to open modal"
+    tabindex="0"
+/>
+
+<!--aria-labeledby="title"-->
+<h2 id="title">Login Form</h2>
+
+<form aria-labelledby="title">
+    <input type="text" placeholder="Username">
+</form>
+
+<label for="password">Password:</label>
+
+<!-- aria-describedby="hint" -->
+<input type="password"
+       id="password"
+       aria-describedby="hint">
+
+<p id="hint">Password must be 8 characters long.</p>
+
+<!-- aria-hidden="true" -->
+<p>
+    Welcome
+    <span aria-hidden="true">❤️</span>
+</p>
+
+<!-- aria-hidden="false" -->
+<p aria-hidden="false">
+    Important Announcement!
+</p>
+
+
+<script>
+    document.querySelector('img').addEventListener('click', function () {
+        alert('Image Clicked!');
+    });
+</script>
+</body>
+</html>
