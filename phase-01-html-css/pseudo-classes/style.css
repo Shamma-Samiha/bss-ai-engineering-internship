@@ -1,0 +1,74 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0a4;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/*style the first list of its parent*/
+ul li:first-child {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 10px;
+}
+
+/*style the last list of its parent*/
+ul li:last-child {
+    background-color: #00ccff;
+    color: #fff;
+    padding: 10px;
+}
+
+/*style the nth list of its parent*/
+ul li:nth-child(2) {
+    background-color: #00ffcc;
+    color: #fff;
+    padding: 10px;
+}
+
+/*atyle odd list of its parent*/
+ul li:nth-child(odd) {
+    background-color: #ff00cc;
+    color: #fff;
+    padding: 10px;
+}
+
+/*style even list of its parent*/
+ul li:nth-child(even) {
+    background-color: #cc00ff;
+    color: #fff;
+    padding: 10px;
+}
+
+/*style the only list of its parent*/
+ul li:only-child {
+    background-color: #00ffcc;
+    color: #fff;
+    padding: 10px;
+}
+
+/*using pseudo classes with pseudo elements*/
+.container p:first-of-type::first-letter {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*Use of before and after pseudo elements*/
+.container p::before {
+    content: "Before: ";
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.container p::after {
+    content: " After";
+    color: #00ccff;
+    font-weight: bold;
+}
