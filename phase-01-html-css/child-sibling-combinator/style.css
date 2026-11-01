@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* Direct Child Selector */
+.container > h1 {
+    color: darkblue;
+}
+
+/* Descendant Selector */
+.container p {
+    font-size: 16px;
+}
+
+/* Adjacent Sibling Selector */
+.container h1 + a {
+    color: red;
+}
+
+/* General Sibling Selector */
+.container p ~ a {
+    color: green;
+}
+
+/* Nested List */
+.container ul ul {
+    color: purple;
+}
