@@ -1,0 +1,36 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.accordion-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-header:focus-visible {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+/* To Show content when expanded */
+.accordion-content[aria-hidden="false"] {
+    display: block;
+}
