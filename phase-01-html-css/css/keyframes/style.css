@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.CONTAINER {
+  width: 100px;
+  margin: 50px auto;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00;
+    animation: animate1 2s infinite alternate;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate1 {
+    from{
+        width: 100px;
+        background-color: #ffcc00;
+        top: 0;
+    }
+    to{
+        width: 300px;
+        background-color: #0099cc;
+        top: 100vh;
+    }
+}
