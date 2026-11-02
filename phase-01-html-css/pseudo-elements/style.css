@@ -67,3 +67,20 @@ li::marker {
     color: blue;
     font-size: 1.2rem;
 }
+
+/*Use of is(), Where(), not() and has() pseudo classes*/
+.container p:is(:first-child, :last-child) {
+    color: green;
+}
+
+.container p:where(:first-child, :last-child) {
+    color: orange;
+}
+
+.container p:not(:first-child) {
+    color: red;
+}
+
+.container p:has(a) {
+    color: rgb(0, 255, 47);
+}

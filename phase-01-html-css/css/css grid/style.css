@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+
+.item{
+    background:lightgreen;
+    padding: 1.5rem;
+    border: 1px solid #188751;
+    text-align: center;
+}
+
+/*CSS Grid Part*/
+.item-grid{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+   grid-template-rows: 1fr 2fr 3fr 4fr;
+    grid-row-gap: 20px;
+}
