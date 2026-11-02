@@ -2,6 +2,10 @@ body{
     font-family: Arial, sans-serif;
 }
 
+h1{
+    text-align: center;
+    color: #333;
+}
 .container{
     width: 1100px;
     margin: 30px auto;
@@ -21,7 +25,17 @@ body{
 .item-grid{
     display: grid;
    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-   grid-template-rows: 1fr 2fr 3fr 4fr;
-    grid-row-gap: 20px;
+   grid-template-rows: repeat(3, 1fr);
+}
+
+/*To make the first item span across two columns, we can use the grid-column-start and grid-column-end properties.*/
+.item-grid .item:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-grid .item:nth-child(2){
+    grid-row-start: 2;
+    grid-row-end: 6;
+  
 }
