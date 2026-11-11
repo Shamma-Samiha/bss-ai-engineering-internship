@@ -12,43 +12,87 @@
       <h1 class="mb-5">Alerts & Progress Bars</h1>
 
       <!-- Alerts -->
-      <div class="">This is a primary alert!</div>
-      <div class="">This is a secondary alert!</div>
-      <div class="">This is a success alert!</div>
-      <div class="">This is a danger alert!</div>
-      <div class="">This is a warning alert!</div>
-      <div class="">This is a info alert!</div>
-      <div class="">This is a light alert!</div>
-      <div class="">This is a dark alert!</div>
+      <div class="alert alert-light" role="alert">This is a primary alert!</div>
+      <div class="alert alert-light" role="alert">This is a secondary alert!</div>
+      <div class="alert alert-light" role="alert">This is a success alert!</div>
+      <div class="alert alert-light" role="alert">This is a danger alert!</div>
+      <div class="alert alert-light" role="alert">This is a warning alert!</div>
+      <div class="alert alert-light" role="alert">This is a info alert!</div>
+      <div class="alert alert-light" role="alert">This is a light alert!</div>
+      <div class="alert alert-light" role="alert">This is a dark alert!</div>
 
       <br /><br />
 
       <!-- Alert with link -->
+        <div class="alert alert-danger" role="alert">
+            This is a primary alert!
+            <a href="#" class="alert-link">Example link</a>
+        </div>
 
       <br /><br />
 
       <!-- Additional Content -->
+      <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Well Done</h4>
 
+          <p>
+            Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Amet, beatae.
+          </p>
+
+          <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+      </div>
       <br /><br />
 
       <!-- Dismissing -->
-
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          Something went wrong
+          <button type="button" class="btn-close"
+           data-bs-dismiss="alert">
+          </button>
+        </div>
       <br /><br />
 
       <!-- Progress Bars -->
+        <div class="progress mb-4">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 25%">
+          </div>
+        </div>
 
+        <div class="progress mb-4">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            style="width: 50%">
+          </div>
+        </div>
       <br /><br />
 
       <!-- Labels -->
-
+      <div class="progress mb-4">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%">
+          40%
+        </div>
+      </div>
       <br /><br />
 
       <!-- Stripes -->
-
+      <div class="progress mb-4">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 40%">
+          40%
+        </div>
+      </div>
       <br /><br />
 
       <!-- Animated Stripes -->
-
+      <div class="progress mb-4">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 40%">
+          40%
+        </div>
+      </div>
       <br /><br />
 
       <!-- Don't go past here -->
