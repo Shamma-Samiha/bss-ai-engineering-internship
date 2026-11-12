@@ -11,6 +11,8 @@
     "sass:watch": "sass --no-source-map --watch scss:css"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "bootstrap": "^5.3.9",
     "sass": "^1.108.2"
   }
 }
